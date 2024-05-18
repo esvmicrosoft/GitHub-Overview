@@ -12,7 +12,7 @@ jobs:
         run: echo Hello World! This is the first job
 
 secondjob:
-  runs-on ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - name: secondJob script
       shell: bash
