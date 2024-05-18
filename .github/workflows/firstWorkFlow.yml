@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: firstJob script
         shell: bash
-        run: echo Hello World! This is the first job
+        run: |
+          whoami
+          lsblk -f
 
   secondjob:
     runs-on: ubuntu-latest
