@@ -4,6 +4,13 @@ on:
   workflow_dispatch:
 
 jobs:
+  selfhosted:
+    runs-on: self-hosted
+    steps:
+      - name: fistJob script 
+        shell: bash 
+        run:  az account show
+        
   firstjob:
     runs-on: ubuntu-latest
     steps:
